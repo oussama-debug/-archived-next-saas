@@ -1,5 +1,7 @@
 import "./global.scss";
 import type { Metadata } from "next";
+import classNames from "classnames";
+import { font_dm_sans, font_inter } from "@/library/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,7 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={classNames(font_dm_sans.variable, font_inter.variable)}
+    >
       <body>{children}</body>
     </html>
   );

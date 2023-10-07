@@ -8,7 +8,14 @@ const config: Config = {
     "./components/animation/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {},
+  theme: {
+    fontFamily: {
+      sans: "var(--font-dm-sans), sans-serif",
+    },
+    colors: {
+      primary: "#000",
+    },
+  },
   plugins: [],
 };
 export default config;
