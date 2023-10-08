@@ -9,13 +9,16 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontFamily: {
-      sans: "var(--font-dm-sans), sans-serif",
-    },
-    colors: {
-      primary: "#211D2D",
-      accentPrimary: "#9C66FF",
-      secondary: "#13D3E9",
+    extend: {
+      fontFamily: {
+        sans: "var(--font-dm-sans), sans-serif",
+      },
+      colors: {
+        primary: "#211D2D",
+        accentPrimary: "#9C66FF",
+        secondary: "#13D3E9",
+        black: "#211D2D",
+      },
     },
     boxShadow: {
       primary_button:
