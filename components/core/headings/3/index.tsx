@@ -17,7 +17,7 @@ export default function Heading3({
   return (
     <h3
       className={classNames(
-        "font-sans font-medium leading-[1.6em] text-[1rem] width-[min-content] lg:max-w-[1200px] text-primary",
+        "font-sans font-medium leading-[1.6em] text-[0.875rem] width-[min-content] lg:max-w-[1200px]",
         uppercase && "uppercase",
         className
       )}

@@ -1,28 +1,46 @@
 "use client";
 
 import Link from "next/link";
-import { FiChevronRight } from "react-icons/fi";
-import LinkButton from "../../core/buttons/link";
-import PrimaryLogo from "../../core/logo/light/primary";
-import SecondaryButton from "../../core/buttons/secondary";
+import { FiArrowRight } from "react-icons/fi";
+import LinkButton from "@/components/core/buttons/link";
+import SecondaryButton from "@/components/core/buttons/secondary";
+import logoPrimary from "@/library/assets/logo-1.svg";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <header className="w-full sticky z-10 px-5 lg:px-7 flex flex-row justify-between items-center py-5">
+    <header className="w-full sticky z-10 px-5 lg:px-14 flex flex-row justify-between items-center py-5">
       <Link href="/">
-        <PrimaryLogo className="scale-[.8]" />
+        <Image
+          src={logoPrimary}
+          width={100}
+          height={20}
+          alt={"Zenlanes social media management software"}
+        />
       </Link>
+      <nav className="hidden lg:flex flex-row justify-center items-center space-x-2">
+        <Link href="/pricing">
+          <LinkButton>
+            <span>Pricing</span>
+          </LinkButton>
+        </Link>
+        <Link href="/contact">
+          <LinkButton>
+            <span>Contact</span>
+          </LinkButton>
+        </Link>
+      </nav>
       <div className="flex flex-row justify-between items-center space-x-2">
         <Link href={"/login"}>
           <LinkButton>
             <span>Login</span>
-            <FiChevronRight className="text-accentPrimary" strokeWidth={3} />
+            <FiArrowRight className="text-accentPrimary" strokeWidth={3} />
           </LinkButton>
         </Link>
         <Link href={"/register"}>
           <SecondaryButton>
             <span>Get started</span>
-            <FiChevronRight className="text-primary" strokeWidth={3} />
+            <FiArrowRight className="text-primary" strokeWidth={3} />
           </SecondaryButton>
         </Link>
       </div>

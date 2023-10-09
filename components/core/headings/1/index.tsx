@@ -12,7 +12,7 @@ export default function Heading1({ children, className }: Props) {
   return (
     <h1
       className={classNames(
-        "font-sans font-bold leading-[1.2em] text-[3.875rem] width-[min-content] lg:max-w-[1200px] text-primary",
+        "font-sans font-bold leading-[1.05em] text-[3.875rem] width-[min-content] text-primary",
         className
       )}
     >
