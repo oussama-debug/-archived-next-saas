@@ -25,8 +25,8 @@ export default async function Register() {
             <div className="space-y-0 w-full flex flex-col justify-start items-start">
               <h1 className="text-md font-medium">Create an account</h1>
               <p className="text-sm text-gray-500 font-medium">
-                Manage all of your social media in one place, and start growing
-                your business in two clicks.
+                Manage all of your social media presence in one place, and start
+                growing your business in two clicks.
               </p>
             </div>
           </div>
