@@ -14,10 +14,10 @@ const config: Config = {
         sans: "var(--font-dm-sans), sans-serif",
       },
       colors: {
-        primary: "#592CE5",
+        primary: "#603FFD",
         destructive: "#d82c0d",
-        brandSecondary: "#13D3E9",
-        brandPrimary: "#592CE5",
+        brandSecondary: "#27273A",
+        brandPrimary: "#603FFD",
         text: "#202223",
         textDisabled: "#8c9196",
         surfaceDisabled: "#fafbfb",

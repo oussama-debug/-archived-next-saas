@@ -18,9 +18,9 @@ export default async function Register() {
           <div className="flex max-w-[320px] flex-col font-sans font-medium justify-center items-start py-1.5 space-y-4">
             <Image
               src={"/logo-white.png"}
-              width={150}
-              height={100}
-              alt="Zenlanes social media management tool"
+              width={220}
+              height={150}
+              alt="mybeautymaster social media management tool"
             />
             <div className="space-y-0 w-full flex flex-col justify-start items-start">
               <h1 className="text-md font-medium">Create an account</h1>
@@ -73,7 +73,7 @@ export default async function Register() {
             <Link href="/login">
               <h2 className="text-black font-medium text-sm">
                 <div className="flex flex-row justify-center items-center space-x-2">
-                  <span>Access my account</span>
+                  <span>Log in to my account</span>
                 </div>
               </h2>
             </Link>
