@@ -9,11 +9,11 @@ export async function GET(request: NextRequest) {
     const result = await axios.get(
       `${process.env.GATEWAY_ENDPOINT}/api/v1/users/session`,
       {
-        headers: { Authorization: `${token}` },
+        headers: { Authorization: `Bearer ${token}` },
       }
     );
-    const data = await result.data();
-    return NextResponse.json({ data }, { status: 200 });
+    const data = await result.data;
+    return NextResponse.json({ ...data }, { status: 200 });
   } catch (error) {
     if (error instanceof AxiosError) {
       if (error.code === "ERR_BAD_REQUEST") {
@@ -32,6 +32,7 @@ export async function GET(request: NextRequest) {
         );
       }
     } else {
+      console.log(error);
       return NextResponse.json(
         { code: 100, subcode: 500, message: "Something went wrong" },
         { status: 200 }

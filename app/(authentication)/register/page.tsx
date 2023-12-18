@@ -15,10 +15,10 @@ export default async function Register() {
     <section className="min-w-screen min-h-screen grid grid-cols-1 lg:grid-cols-1">
       <div className="bg-white flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center px-2">
-          <div className="flex max-w-[320px] flex-col font-sans font-medium justify-center items-start py-1.5 space-y-4">
+          <div className="flex max-w-[320px] flex-col font-sans font-medium justify-center items-start py-0 space-y-3">
             <Image
               src={"/logo-white.png"}
-              width={220}
+              width={190}
               height={150}
               alt="mybeautymaster social media management tool"
             />
