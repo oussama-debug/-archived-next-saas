@@ -11,7 +11,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: "var(--font-dm-sans), sans-serif",
+        sans: "var(--font-poppins), var(--font-dm-sans), sans-serif",
+        inter: "var(--font-dm-inter), sans-serif",
       },
       colors: {
         primary: "#603FFD",

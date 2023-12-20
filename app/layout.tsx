@@ -1,7 +1,7 @@
 import "./global.scss";
 import type { Metadata } from "next";
 import classNames from "classnames";
-import { font_dm_sans, font_inter } from "@/library/fonts";
+import { font_dm_sans, font_inter, font_poppins } from "@/library/fonts";
 import RequestProvider from "@/library/requests/provider";
 
 export const metadata: Metadata = {
@@ -17,7 +17,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={classNames(font_dm_sans.variable, font_inter.variable)}
+      className={classNames(
+        font_dm_sans.variable,
+        font_inter.variable,
+        font_poppins.variable
+      )}
     >
       <body>
         <RequestProvider>{children}</RequestProvider>
