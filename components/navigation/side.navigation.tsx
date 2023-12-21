@@ -13,9 +13,7 @@ export default function SideNavigation() {
   return (
     <div className="flex flex-col overflow-y-hidden min-h-screen border-r border-slate-50 bg-white py-5 w-full lg:w-[250px]">
       <div className="flex h-16 items-center px-5">
-        <h1 className="font-sans text-md font-medium">
-          my<span className="text-primary">beauty</span>master
-        </h1>
+        <h1 className="font-sans text-md font-medium">zenlanes</h1>
       </div>
       <nav className="flex flex-1 flex-col">
         <ul role="list" className="flex flex-1 flex-col gap-y-4">
@@ -47,33 +45,6 @@ export default function SideNavigation() {
                 >
                   <TbPlus className="text-gray-500" size={17} />
                 </Button>
-              </li>
-              <li className="font-inter font-medium rounded text-sm text-gray-500 bg-opacity-20">
-                <Link
-                  href={"/organization/dashboard"}
-                  className="flex flex-row justify-start items-center space-x-2"
-                >
-                  <TbBrandInstagram size={20} />
-                  <h2>Instagram</h2>
-                </Link>
-              </li>
-              <li className="font-inter font-medium rounded text-sm text-gray-500 bg-opacity-20">
-                <Link
-                  href={"/organization/dashboard"}
-                  className="flex flex-row justify-start items-center space-x-3"
-                >
-                  <TbBrandFacebook size={20} className="-mx-0.5" />
-                  <h2>Facebook</h2>
-                </Link>
-              </li>
-              <li className="font-inter font-medium rounded text-sm text-gray-500 bg-opacity-20">
-                <Link
-                  href={"/organization/dashboard"}
-                  className="flex flex-row justify-start items-center space-x-2.5"
-                >
-                  <TbBrandGoogle size={18} />
-                  <h2>Google</h2>
-                </Link>
               </li>
             </ul>
           </li>
