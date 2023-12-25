@@ -1,13 +1,13 @@
 import { getCookieToken } from "@/library/requests/utility/getCookieToken";
-import { NextResponse, type NextRequest } from "next/server";
 import axios, { AxiosError } from "axios";
+import { NextRequest, NextResponse } from "next/server";
 
 export const dynamic = "force-dynamic";
 export async function GET(request: NextRequest) {
   try {
     const token = await getCookieToken(request);
     const result = await axios.get(
-      `${process.env.GATEWAY_ENDPOINT}/api/v1/users/session`,
+      `${process.env.GATEWAY_ENDPOINT}/api/v1/facebook/redirect`,
       {
         headers: { Authorization: `Bearer ${token}` },
       }
@@ -21,7 +21,7 @@ export async function GET(request: NextRequest) {
           {
             code: 100,
             subcode: 401,
-            message: "Failed to fetch user's session",
+            message: "Failed to create instagram channel",
           },
           { status: 200 }
         );

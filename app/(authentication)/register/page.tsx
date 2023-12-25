@@ -18,11 +18,11 @@ export default async function Register() {
           <div className="flex max-w-[320px] flex-col font-sans font-medium justify-center items-start py-0 space-y-3">
             <Image
               src={"/logo-white.png"}
-              width={190}
-              height={150}
+              width={130}
+              height={110}
               alt="mybeautymaster social media management tool"
             />
-            <div className="space-y-0 w-full flex flex-col justify-start items-start">
+            <div className="space-y-0.5 py-2 w-full flex flex-col justify-start items-start">
               <h1 className="text-md font-medium">Create an account</h1>
               <p className="text-sm text-gray-500 font-medium">
                 Manage all of your social media presence in one place, and start

@@ -1,24 +1,19 @@
 import React from "react";
-import {
-  TbBrandGoogle,
-  TbBrandInstagram,
-  TbPlus,
-  TbBrandFacebook,
-  TbSmartHome,
-} from "react-icons/tb";
+import { TbPlus, TbSmartHome } from "react-icons/tb";
 import Link from "next/link";
+import Image from "next/image";
 import Button from "@/components/core/button";
 
 export default function SideNavigation() {
   return (
-    <div className="flex flex-col overflow-y-hidden min-h-screen border-r border-slate-50 bg-white py-5 w-full lg:w-[250px]">
+    <div className="flex flex-col overflow-y-hidden min-h-screen border-r border-slate-50 bg-white py-0 w-full lg:w-[250px]">
       <div className="flex h-16 items-center px-5">
-        <h1 className="font-sans text-md font-medium">zenlanes</h1>
+        <Image src={"/logo-black.png"} alt="" height={100} width={100} />
       </div>
       <nav className="flex flex-1 flex-col">
-        <ul role="list" className="flex flex-1 flex-col gap-y-4">
-          <li className="flex flex-col justify-start items-start space-y-2">
-            <ul className="flex flex-col w-full space-y-2 px-4">
+        <ul role="list" className="flex flex-1 flex-col gap-y-1">
+          <li className="flex flex-col justify-start items-start space-y-1">
+            <ul className="flex flex-col w-full space-y-1 px-4">
               <li className="uppercase font-medium text-xs text-gray-400 tracking-wide">
                 main
               </li>
@@ -33,18 +28,20 @@ export default function SideNavigation() {
               </li>
             </ul>
           </li>
-          <li className="flex flex-col justify-start items-start space-y-2">
-            <ul className="flex flex-col w-full space-y-3 px-4">
+          <li className="flex flex-col justify-start items-start">
+            <ul className="flex flex-col w-full px-4">
               <li className="uppercase flex flex-row justify-between items-center font-medium text-xs text-gray-400 tracking-wide">
                 <span>channels</span>
-                <Button
-                  variant={"monochrome"}
-                  modifier={"plain"}
-                  loading={false}
-                  size={"slim"}
-                >
-                  <TbPlus className="text-gray-500" size={17} />
-                </Button>
+                <Link href="/organization/channels/create">
+                  <Button
+                    variant={"monochrome"}
+                    modifier={"plain"}
+                    loading={false}
+                    size={"slim"}
+                  >
+                    <TbPlus className="text-gray-500" size={17} />
+                  </Button>
+                </Link>
               </li>
             </ul>
           </li>
