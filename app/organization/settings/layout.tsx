@@ -1,6 +1,6 @@
 import SessionProvider from "@/library/requests/session";
 
-export default function DashboardLayout({
+export default function SettingsLayout({
   children,
 }: {
   children: React.ReactNode;

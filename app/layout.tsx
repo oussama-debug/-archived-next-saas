@@ -20,7 +20,8 @@ export default function RootLayout({
       className={classNames(
         font_dm_sans.variable,
         font_inter.variable,
-        font_poppins.variable
+        font_poppins.variable,
+        "bg-slate-50"
       )}
     >
       <body>

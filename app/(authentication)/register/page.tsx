@@ -1,7 +1,7 @@
 import Button from "@/components/core/button";
 import Image from "next/image";
 import Link from "next/link";
-import { FaGoogle, FaTwitter } from "react-icons/fa6";
+import { FaGoogle } from "react-icons/fa6";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -24,7 +24,7 @@ export default async function Register() {
             />
             <div className="space-y-0.5 py-2 w-full flex flex-col justify-start items-start">
               <h1 className="text-md font-medium">Create an account</h1>
-              <p className="text-sm text-gray-500 font-medium">
+              <p className="text-[.82rem] text-gray-500 font-inter font-normal">
                 Manage all of your social media presence in one place, and start
                 growing your business in two clicks.
               </p>
@@ -39,39 +39,29 @@ export default async function Register() {
                 loading={false}
                 className="flex flex-row justify-start items-center space-x-2"
               >
-                <div className="flex flex-row justify-center items-center space-x-2">
-                  <FaGoogle size={16} />
-                  <span>Create an account with Google</span>
-                </div>
-              </Button>
-            </Link>
-            <Link
-              href={`${process.env.GATEWAY_ENDPOINT}/api/v1/twitter/redirect`}
-            >
-              <Button
-                variant={"primary"}
-                loading={false}
-                className="flex flex-row justify-start items-center space-x-2"
-              >
-                <div className="flex flex-row justify-center items-center space-x-2">
-                  <FaTwitter size={16} />
-                  <span>Create an account with Twitter</span>
+                <div className="flex text-[.82rem] font-medium font-inter flex-row justify-center items-center space-x-2">
+                  <FaGoogle size={13} />
+                  <span className="text-[.82rem]">
+                    Create my account with Google
+                  </span>
                 </div>
               </Button>
             </Link>
           </div>
           <div className="max-w-[320px] w-full py-1.5">
             <div className="space-y-0 w-full flex flex-col justify-start items-start">
-              <p className="text-sm text-gray-500 font-medium">
+              <p className="text-[.82rem] text-gray-500 font-inter font-normal">
                 By signing up you agree to our terms & conditions and privacy
                 policy.
               </p>
             </div>
           </div>
           <div className="w-full max-w-[320px] py-1 space-y-0.5 flex flex-col justify-start items-start text-brandPrimary font-medium">
-            <h2 className="text-sm">If you already have an account ?</h2>
+            <h2 className="text-[.82rem] font-inter">
+              If you already have an account ?
+            </h2>
             <Link href="/login">
-              <h2 className="text-black font-medium text-sm">
+              <h2 className="text-black font-inter font-medium text-[.82rem]">
                 <div className="flex flex-row justify-center items-center space-x-2">
                   <span>Log in to my account</span>
                 </div>

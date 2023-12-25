@@ -15,11 +15,11 @@ const button = cva("rounded-md relative", {
     modifier: {
       outline:
         "bg-transparent border border-current shadow-[0_0_0_1px_currentColor]",
-      plain: "shadow-none bg-transparent border-none px-2 py-1 text-sm",
+      plain: "shadow-none bg-transparent border-none px-2 py-1 text-[.82rem]",
     },
     size: {
-      slim: "text-sm",
-      medium: "text-sm",
+      slim: "text-[.82rem]",
+      medium: "text-[.82rem]",
       large: "text-base",
     },
     fullWidth: {
